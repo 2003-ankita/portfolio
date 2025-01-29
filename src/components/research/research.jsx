@@ -6,7 +6,7 @@ export default function Research_Work() {
   return (
     <section
       id="research"
-      className="relative overflow-hidden flex flex-col text-gray-600 body-font py-24"
+      className="relative overflow-hidden flex flex-col text-gray-600 body-font py-20"
     >
       <div className="container mx-auto px-5 py-10">
         
