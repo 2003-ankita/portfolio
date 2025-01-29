@@ -6,10 +6,11 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa';
 
 export default function Hero() {
   return (
-    <div className='relative overflow-hidden min-h-[400px] sm:min-h-[400px] flex flex-col'>
-      <div className='md:h-[600px] h-[720px] md:w-[600px] w-[600px] right-0 bg-gradient-to-r from-orange-600 
-        via-yellow-500 to-red-400 absolute rounded-full transform rotate-12 -top-20 shadow-[0_0_40px_rgb(255, 165, 0, 0.7)]'>
-      </div>
+    <div className='relative overflow-hidden min-h-[550px] sm:min-h-[660px] flex flex-col'>
+      <div className='md:h-[720px] h-[960px] md:w-[640px] w-[880px] right-0 bg-gradient-to-r from-orange-600 
+        via-yellow-500 to-red-400 absolute rounded-full transform rotate-12 -top-20 shadow-[0_0_40px_rgb(255, 165, 0, 0.7)]'
+        >
+        </div>
       <Navbar />
       <section 
         data-aos='fade-up'
@@ -49,8 +50,8 @@ export default function Hero() {
             </div>
 
           </div>
-          <div className='lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mt-[-60px] flex justify-center'>
-            <img src={img} alt="hero" className='object-cover object-center rounded-full w-80 h-80' />
+          <div className='lg:max-w-lg lg:w-full md:w-1/2 w-5/6'>
+                   <img src={img} alt="hero" className='object-cover object-center rounded-full w-80 h-80' />
           </div>
 
         </div>

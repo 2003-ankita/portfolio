@@ -16,7 +16,7 @@ export default function Research_Work() {
           <div className="w-full md:w-1/2 mb-8 md:mb-0 flex justify-center px-4">
           <img
           src={research_paper}
-          className="object-cover w-full h-[350px] rounded-lg shadow-lg"
+          className="object-cover w-full rounded-lg shadow-lg"
           alt="Research Paper"
           />
           </div>
