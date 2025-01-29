@@ -14,11 +14,11 @@ export default function Research_Work() {
           
           {/* Image Section */}
           <div className="w-full md:w-1/2 mb-8 md:mb-0 flex justify-center px-4">
-          <img
-          src={research_paper}
-          className="object-cover w-full rounded-lg shadow-lg"
-          alt="Research Paper"
-          />
+             <img
+               src={research_paper}
+               className="object-contain w-[80%] md:w-full rounded-lg shadow-lg mx-auto"
+              alt="Research Paper"
+             />
           </div>
 
 

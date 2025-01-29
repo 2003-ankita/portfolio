@@ -25,8 +25,8 @@ export default function Projects() {
         { 
             id: 3, 
             image: image3, 
-            title: 'Reddit Sentiment Analysis using AWS Services', 
-            description: 'Designed a real-time sentiment analysis pipeline using Python,AWS Services, and Power BI for visualization,achieving 81% accuracy.',
+            title: 'Reddit Sentiment Analysis', 
+            description: "Designed a real time sentiment analysis pipeline using python, AWS Services(AWS Lambda,Kinesis Firehose, S3, Glue ,Comprehend, Athena,CloudWatch) and PowerBI for visualization.",
             github: 'https://github.com/2003-ankita/reddit-sentiment-analysis'
         },
     ];
