@@ -19,7 +19,7 @@ export default function Projects() {
             id: 2, 
             image: image2, 
             title: 'YouTube Data Scraper & Analysis', 
-            description: 'Scrape and visualize YouTube data using the YouTube Data API, extracting metrics like likes, views, engagement rates, making it a valuable tool for content creators and analysts.',
+            description: 'Scrape and visualize YouTube data using the YouTube Data API, extracting metrics like likes, subscribers, engagement rates, making it a valuable tool for content creators and analysts.',
             github: 'https://github.com/2003-ankita/YouTube-Analysis'
         },
         { 
