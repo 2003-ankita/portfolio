@@ -54,13 +54,12 @@ export default function Projects() {
                 <Slider {...settings}>
                     {listProjects.map((project) => (
                         <div key={project.id} className='p-4'>
-                         
-                            <div className='h-full border-2 border-orange-400 shadow-[0_0_15px_rgba(255,165,0,0.7)] border-opacity-60 rounded-lg overflow-hidden flex flex-col'>
-                                <img src={project.image} alt={project.title} className='w-full h-auto lg:h-48 md:h-36 sm:h-24 object-cover object-center' />
+                           
+                            <div className='h-full min-h-[400px] border-2 border-orange-400 shadow-[0_0_15px_rgba(255,165,0,0.7)] border-opacity-60 rounded-lg overflow-hidden flex flex-col'>
+                                <img src={project.image} alt={project.title} className='w-full h-48 object-cover object-center' />
                                 <div className='p-6 flex flex-col h-full'>
                                     <h2 className='tracking-widest text-xl title-font font-medium text-gray-400 mb-1'>{project.title}</h2>
-                                    
-                           
+                                 
                                     <p className='leading-relaxed mb-3 flex-grow'>
                                         {project.description}
                                     </p>
