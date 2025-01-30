@@ -19,14 +19,14 @@ export default function Projects() {
             id: 2, 
             image: image2, 
             title: 'YouTube Data Scraper & Analysis', 
-            description: 'Scraped and analyzed YouTube data using the YouTube Data API, extracting metrics like subscribers, views, and engagement rates, visualizing trends with Seaborn for insights.',
+            description: 'Scraped and analyzed YouTube data using the YouTube Data API, extracting key metrics like subscribers, views, video stats, and engagement rates, and visualized trends with Seaborn for insights.',
             github: 'https://github.com/2003-ankita/YouTube-Analysis'
         },
         { 
             id: 3, 
             image: image3, 
-            title: 'Reddit Sentiment Analysis', 
-            description: "Designed a real time sentiment analysis pipeline using python, various AWS Services and PowerBI for visualization, achieving an accuracy of 81% in sentiment classification.",
+            title: 'Reddit Sentiment Analysis Using AWS Services', 
+            description: "Designed a real time sentiment analysis pipeline using python, AWS Services and PowerBI for visualization, achieving 81% accuracy. ",
             github: 'https://github.com/2003-ankita/reddit-sentiment-analysis'
         },
     ];
@@ -53,24 +53,30 @@ export default function Projects() {
                 <h2 className='text-4xl font-bold text-center mb-12'>My Projects</h2>
                 <Slider {...settings}>
                     {listProjects.map((project) => (
-                        <div key={project.id} className='p-4'>
-                            <div className='h-full border-2 border-orange-400 shadow-[0_0_15px_rgba(255,165,0,0.7)] border-opacity-60 rounded-lg overflow-hidden'>
-                                <img src={project.image} alt={project.title} className='w-full h-auto lg:h-48 md:h-36 sm:h-24 object-cover object-center' />
-                                <div className='p-6'>
-                                    <h2 className='tracking-widest text-xl title-font font-medium text-gray-400 mb-1'>{project.title}</h2>
-                                    <p className='leading-relaxed mb-3'>{project.description}</p>
-                                    <div className='flex justify-center'>
-                                        <a href={project.github} target='_blank' rel='noopener noreferrer'> 
-                                            <button className='inline-flex text-white bg-orange-500 border-0 py-2 px-6 
-                                                focus:outline-none hover:bg-orange-600 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)]
-                                                rounded-full text-lg'>
-                                                View Project
-                                            </button>
-                                        </a>
-                                    </div>
+                        <div className='p-4'>
+                        <div className='h-full border-2 border-orange-400 shadow-[0_0_15px_rgba(255,165,0,0.7)] border-opacity-60 rounded-lg overflow-hidden flex flex-col'>
+                            <img src={project.image} alt={project.title} className='w-full h-auto lg:h-48 md:h-36 sm:h-24 object-cover object-center' />
+                            <div className='p-6 flex flex-col flex-grow'>
+                                <h2 className='tracking-widest text-xl title-font font-medium text-gray-400 mb-1'>{project.title}</h2>
+                                
+                                {/* Set a fixed height for description */}
+                                <p className='leading-relaxed mb-3 min-h-[4rem] overflow-hidden text-ellipsis'>
+                                    {project.description}
+                                </p>
+                    
+                                <div className='flex justify-center mt-auto'>
+                                    <a href={project.github} target='_blank' rel='noopener noreferrer'> 
+                                        <button className='inline-flex text-white bg-orange-500 border-0 py-2 px-6 
+                                            focus:outline-none hover:bg-orange-600 hover:shadow-[0_0_40px_rgb(255,165,0,0.7)]
+                                            rounded-full text-lg'>
+                                            View Project
+                                        </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    
                     ))}
                 </Slider>
             </div>
