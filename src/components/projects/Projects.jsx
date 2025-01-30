@@ -13,7 +13,7 @@ export default function Projects() {
             id: 1, 
             image: image, 
             title: 'Walmart Time Series Forecasting', 
-            description: 'Implemented time series forecasting models like SMA, EMA, Holt-Winters, ARIMA, SARIMA, and Prophet, and created a Power BI dashboard to visualize sales trends.',
+            description: 'Implemented time series forecasting models like SMA, EMA, ARIMA, SARIMA, and Prophet, and created a Power BI dashboard to visualize sales trends.',
             github: 'https://github.com/2003-ankita/Walmart_Time_Series_Forecasting'
         },
         { 
@@ -34,7 +34,7 @@ export default function Projects() {
             id: 4, 
             image: image4, 
             title: 'Cold Email Generator', 
-            description: "Developed a cold email generator using Llama3.1, Groq LangChain, and Streamlit that extracts job listings from company career pages and generates personalized emails.",
+            description: "Developed a cold email generator using Llama3.1, Groq LangChain, and Streamlit that extracts job listings from company career pages and generates personalized emails",
             github: 'https://github.com/2003-ankita/cold_email_generator'
         },
     ];
@@ -93,17 +93,17 @@ export default function Projects() {
                                         <p className='description'>
                                             {project.description}
                                         </p>
-                                        <div className='button-wrapper'>
-                                            <a 
-                                                href={project.github} 
-                                                target='_blank' 
-                                                rel='noopener noreferrer'
-                                            > 
-                                                <button className='view-button'>
-                                                    View Project
-                                                </button>
-                                            </a>
-                                        </div>
+                                    </div>
+                                    <div className='button-wrapper'>
+                                        <a 
+                                            href={project.github} 
+                                            target='_blank' 
+                                            rel='noopener noreferrer'
+                                        > 
+                                            <button className='view-button'>
+                                                View Project
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -118,7 +118,8 @@ export default function Projects() {
                 }
 
                 .card {
-                    height: 450px;
+                    height: 490px; 
+                    width: 500px;
                     display: flex;
                     flex-direction: column;
                     border: 2px solid #fb923c;
@@ -126,6 +127,7 @@ export default function Projects() {
                     overflow: hidden;
                     box-shadow: 0 0 15px rgba(255,165,0,0.7);
                     margin: 0 0.5rem;
+                    width: 100%
                 }
 
                 .image-wrapper {
@@ -157,6 +159,7 @@ export default function Projects() {
                     flex-direction: column;
                     padding: 1.5rem;
                     background-color: #111827;
+                    overflow: hidden;
                 }
 
                 .title {
@@ -176,9 +179,11 @@ export default function Projects() {
                 }
 
                 .button-wrapper {
-                    margin-top: 1rem;
+                    margin-top: auto; /* Ensures the button is always at the bottom */
                     display: flex;
                     justify-content: center;
+                    padding: 1rem;
+                    background-color: #111827;
                 }
 
                 .view-button {
