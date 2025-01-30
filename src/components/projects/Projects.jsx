@@ -19,7 +19,7 @@ export default function Projects() {
             id: 2, 
             image: image2, 
             title: 'YouTube Data Scraper & Analysis', 
-            description: 'Scraped and analyzed YouTube data using the YouTube Data API, extracting metrics like subscribers, views, and engagement rates. The insights were visualized using Seaborn for content analysis.',
+            description: 'Scraped and analyzed YouTube data using the YouTube Data API, extracting metrics like subscribers, views, and comments. The insights were visualized using Seaborn for content analysis.',
             github: 'https://github.com/2003-ankita/YouTube-Analysis'
         },
         { 
